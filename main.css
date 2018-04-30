@@ -80,7 +80,7 @@ body {
  * ------------------------------------------------------------------- */
 a,
 a:visited {
-	color: #1237B1;
+	color: #8fd3f4;
 	border-bottom: 1px solid transparent;
 	-moz-transition: all 0.4s ease-in-out;
 	-o-transition: all 0.4s ease-in-out;
@@ -151,6 +151,20 @@ h6, .h06 {
 p img {
 	margin: 0;
 }
+
+figcaption {
+    display: block;
+}
+
+figure {
+  text-align: center;
+  font-style: italic;
+  font-size: smaller;
+  text-indent: 0;
+  margin: 0em;
+  padding: 0em;
+}
+
 p.lead {
 	font-family: 'roboto-light', sans-serif;
 	font-size: 2.4rem;
@@ -1564,8 +1578,9 @@ input::-moz-focus-inner {
  * ------------------------------------------------------------------- */
 header {
 	width: 100%;
-	background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
- background-blend-mode: multiply,multiply;
+	/*background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+ background-blend-mode: multiply,multiply;*/
+ background: #f1f1f1;
 	height: 130px;
 	/*border-bottom: 1px solid #E5E5E5;*/
 }
@@ -1607,7 +1622,7 @@ header .logo a {
 	border: none;
 	width: 250px;
 	height: 60px;
-	background: url("../images/kz-logo.png") no-repeat center;
+	background: url("../images/kz-logo-black.png") no-repeat center;
 	/*background-size: 60px 60px;*/
 	font: 0/0 a;
 	text-shadow: none;
@@ -1661,7 +1676,7 @@ header .logo a {
 .triggers .search-trigger {
 	display: inline-block;
 	font-size: 17px;
-	color: #ffffff;
+	color: #000000;
 }
 
 .triggers .menu-toggle {
@@ -1726,13 +1741,13 @@ header .logo a {
 .main-navigation li a {
 	display: block;
 	padding-bottom: 9px;
-	color: #ffffff;
+	color: #000000;
 	border: none;
 }
 
 .main-navigation li a:hover {
-  border-bottom: 2px solid #ffffff;
-	color: #ffffff;
+  border-bottom: 2px solid #000000;
+	color: #000000;
 }
 
 .main-navigation li > a {
@@ -1740,8 +1755,8 @@ header .logo a {
 }
 
 .main-navigation li.current > a {
-	border-bottom: 2px solid #ffffff;
-	color: #ffffff;
+	border-bottom: 2px solid #000000;
+	color: #000000;
 	font-family: "montserrat-bold", sans-serif;
 }
 
@@ -2242,7 +2257,7 @@ header .logo a {
 }
 
 #content-wrap .row.wide {
-	max-width: 1300px;
+	max-width: 1000px;
 }
 
 #content-wrap .row.narrow {
@@ -2265,13 +2280,23 @@ header .logo a {
 
 #content-wrap .primary-content img {
 	max-width: 910px;
-	margin: 3rem 0 3rem -6rem;
+	margin: 0rem 0 0rem -6rem;
 }
 
 #content-wrap .primary-content img.pull-right {
 	margin: 0.9rem 0 0 2.4rem;
 	max-width: 100%;
 }
+/*
+.centerblock{
+    background-color: red;
+    padding: -300px 200px 300px 400px;
+}
+
+.square{
+    margin:3rem 0 3rem -6rem
+    Background-color: #fff;
+}*/
 
 #content-wrap .primary-content img.pull-left {
 	margin: 0.9rem 2.4rem 0 0;
